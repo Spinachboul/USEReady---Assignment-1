@@ -52,7 +52,7 @@ contract-ner/
 
 ```bash
 git clone https://github.com/yourname/useREADY---Assignment-1.git
-cd contract-ner
+cd useREADY---Assignment-1
 python -m venv venv
 source venv/bin/activate   # (Linux/Mac)
 venv\Scripts\activate      # (Windows)
@@ -114,8 +114,3 @@ Features:
 * streamlit
 * python-docx
 * PyPDF2
-
-(Installed via `requirements.txt`)
-
-👉 Do you want me to also add a **usage example screenshot** (Streamlit UI + extracted JSON) to the README for extra clarity?
-
