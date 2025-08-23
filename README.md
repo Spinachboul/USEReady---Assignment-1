@@ -113,3 +113,6 @@ Features:
 * streamlit
 * python-docx
 * PyPDF2
+
+## Note to the reviewer
+I have not handlded the case for uploading the images in form of `.png` since I was having some internal issue while working with `tesseract`, but having said that, we can easily extend this system to handle a bunch of file formats such as `.pdf` , `.txt` as well as excel formats
