@@ -1,7 +1,6 @@
 # Contract NER Extraction
 
 A machine learning–driven **Named Entity Recognition (NER)** system for extracting key fields from legal contracts.
-No regex, no rules — powered by **HuggingFace Transformers** fine-tuned for contract entity extraction.
 
 ---
 
@@ -51,7 +50,7 @@ contract-ner/
 ## Installation
 
 ```bash
-git clone https://github.com/yourname/useREADY---Assignment-1.git
+git clone https://github.com/Spinachboul/useREADY---Assignment-1.git
 cd useREADY---Assignment-1
 python -m venv venv
 source venv/bin/activate   # (Linux/Mac)
