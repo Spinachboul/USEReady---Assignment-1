@@ -51,7 +51,7 @@ contract-ner/
 ## Installation
 
 ```bash
-git clone https://github.com/yourname/useREADY-Assignment-1.git
+git clone https://github.com/yourname/useREADY---Assignment-1.git
 cd contract-ner
 python -m venv venv
 source venv/bin/activate   # (Linux/Mac)
@@ -118,3 +118,4 @@ Features:
 (Installed via `requirements.txt`)
 
 👉 Do you want me to also add a **usage example screenshot** (Streamlit UI + extracted JSON) to the README for extra clarity?
+
