@@ -1,4 +1,3 @@
-# app.py
 import os
 import tempfile
 import pandas as pd
@@ -6,9 +5,7 @@ import streamlit as st
 from transformers import AutoTokenizer, AutoModelForTokenClassification, pipeline
 from sklearn.metrics import precision_score, recall_score, f1_score
 
-# =====================
-# Load Model
-# =====================
+
 @st.cache_resource
 def load_model():
     model_dir = "contract-ner-model"  # path to your trained model
@@ -18,9 +15,6 @@ def load_model():
 
 ner_pipeline = load_model()
 
-# =====================
-# File Readers
-# =====================
 def read_file(path):
     ext = path.split(".")[-1].lower()
     if ext == "txt":
@@ -40,9 +34,6 @@ def read_file(path):
         return text
     return ""
 
-# =====================
-# Evaluation
-# =====================
 def evaluate(test_csv, test_dir):
     df_test = pd.read_csv(test_csv)
 
@@ -116,10 +107,8 @@ def evaluate(test_csv, test_dir):
 
     return pd.DataFrame(metrics)
 
-# =====================
-# Streamlit UI
-# =====================
-st.title("📑 Contract NER Evaluation")
+
+st.title("Contract NER Evaluation")
 
 st.markdown("Upload **test.csv** and the **test directory** (with TXT/DOCX/PDF files).")
 
@@ -145,7 +134,7 @@ if test_csv and test_dir:
         else:
             test_folder = tmpdir
 
-        st.write("✅ Files uploaded successfully. Running evaluation...")
+        st.write("Files uploaded successfully. Running evaluation...")
 
         metrics_df = evaluate(csv_path, test_folder)
         st.dataframe(metrics_df, use_container_width=True)
