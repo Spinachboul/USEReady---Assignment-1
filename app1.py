@@ -6,7 +6,7 @@ from evaluate_model import fields, compute_exact_match
 
 st.set_page_config(page_title="Contract NER Extraction App", layout="wide")
 
-st.title("📄 Contract NER Extraction App")
+st.title("Contract NER Extraction App")
 
 uploaded_doc = st.file_uploader("Upload a contract (txt, docx, pdf)", type=["txt", "docx", "pdf"])
 
